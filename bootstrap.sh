@@ -18,6 +18,8 @@ read -p "Install graphics and photography apps? (y/N) " install_graphics
 read -p "Install games? (y/N) " install_games
 read -p "Install Microsoft Teams? (y/N) " install_teams
 
+# Unit conversion utility
+sudo apt-get install units -y -qq
 
 # Snapd (unfortunately required for some of these applications)
 if [[ $install_snap =~ y|Y ]]; then
